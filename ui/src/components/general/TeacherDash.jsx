@@ -50,7 +50,7 @@ class TeacherDash extends Component {
                   <td>{students.id}</td>
                   <td>{students.firstName}</td>
                   <td>{students.lastName}</td>
-                  <td>{students.ssn}</td>
+                  <td>{students.ssn.toString().substring(0,3) + "-" + students.ssn.toString().substring(3, 5) + "-" + students.ssn.toString().substring(5)}</td>
                 </tr>
               )
             }
