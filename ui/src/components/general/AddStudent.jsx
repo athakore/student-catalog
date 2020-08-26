@@ -41,7 +41,7 @@ class AddStudent extends Component {
         return(
             <div>
                 <div className="jumbotron" style={{backgroundColor: "gray"}}>
-                <h3 style={{textAlign: "center"}}>Add Employee</h3>
+                <h3 style={{textAlign: "center"}}>Add Student</h3>
                 </div>
                 <div className="container">
                     <form onSubmit={this.handleSubmit}>
