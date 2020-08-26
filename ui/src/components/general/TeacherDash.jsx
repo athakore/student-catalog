@@ -26,7 +26,7 @@ class TeacherDash extends Component {
     }
 
     addStudentClicked() {
-      this.props.history.push("/addStudent/")
+      this.props.history.push("/addStudent")
     }
 
   render() {
@@ -59,10 +59,10 @@ class TeacherDash extends Component {
           <div className="row"style={{width: "100%"}}>
             <br/>
             <div style={{width:"50%"}}>
-              <button className="btn btn-success" onClick={this.addStudentClicked}>Add Student</button>
+              <button className="btn btn-success" onClick={() => this.props.history.push("/addStudent")}>Add Student</button>
             </div>
             <div style={{float: "right", width:"50%"}}>
-              <button className="btn btn-warning" onClick={() =>this.props.history.push("/")}>Logout</button>
+              <button className="btn btn-warning" onClick={() => this.props.history.push("/")}>Logout</button>
             </div>
           </div>
         </div>
